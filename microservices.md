@@ -1,77 +1,68 @@
-# Thoughts on microservices
+# Thoughts on Microservices
 
-No doubt what we express here lacks originality. We just need to contemplate on the subject and write our thoughts down, as 
-requests around microservices regularly pop up in our projects, and we have to explain our position
-to clients, to the management and - more importantly - to ourselves.
+No doubt, what we express here lacks originality. We simply need to contemplate the subject and write down our thoughts. Requests about microservices regularly arise in our projects, and we have to explain our position - to clients, to management, and, most importantly, to ourselves.
 
-## On the nature of our projects
+## On the Nature of Our Projects
 
-We help with migration of large projects, usually from mainframes to today’s technologies that often assume 
-cloud environments and involve Java or C# on the backend and, if relevant, Angular or React on the frontend.
+We help migrate large projects, usually from mainframes to today’s technologies. These often assume cloud environments and involve Java or C# on the backend and, when relevant, Angular or React on the frontend.
 
-The projects we deal with are usually essential to a client's business, so they cannot be decommissioned or easily rewritten. 
-That is where we come in with automatic and verifiable approaches.
+The projects we handle are typically essential to a client’s business, meaning they cannot be decommissioned or easily rewritten. That’s where we come in, offering automatic and verifiable approaches.
 
-Original projects usually follow the "classic" client-server-database scheme. They often have UI, services or batch operations. 
-They have large codebases, with a complex graph of connections between programs.
+Original projects usually follow the classic client-server-database model. They often have a UI, services, or batch operations. Their codebases are large and have a complex graph of connections between programs.
 
-## On client expectations
+## On Client Expectations
 
-Clients need continuity of their projects' life and experience. They want to migrate to today's technologies. 
-They want performance improvements. Ease of development and support is paramount for them. 
-They often talk about migrating to the cloud. 
-They know that cloud is almost equal to microservices.
+Clients need continuity for their projects’ lifecycles and user experience. They want to migrate to modern technologies. Performance improvements are important. Above all, ease of development and support is paramount. Clients frequently talk about migrating to the cloud, and often equate moving to the cloud with adopting microservices.
 
 ## Microservices
 
 What are they?  
-We asked Copilot to draw a diagram of cloud application implemented with microservices. This is what it came with:
+We asked Copilot to draw a diagram of a cloud application implemented with microservices. This is what it produced:
 
 ![image](https://github.com/user-attachments/assets/2af3c4ef-8408-4469-82c8-e14dd9e05076)
 
-Well, Copilot is not great these days at drawing such diagrams, yet the idea is clear enough!
+Well, Copilot isn’t great at drawing such diagrams these days, but the idea is clear enough!
 
-Can our projects be represented like this?
+Can our projects be represented like this?  
 Almost, but with a couple of additions:
-* there are from hundreds to thousands of services;
-* there are shared code used by services.
+* There are hundreds to thousands of services.
+* There is shared code used by those services.
 
-We asked Copilot to account this, and it produced the following:
+We asked Copilot to account for this, and it produced the following:
+
 ![image](https://github.com/user-attachments/assets/5e782040-7161-454f-a08f-abac7f7de1d1)
 
-Still ugly picture, but idea is even more clear!
+Still an ugly picture, but the idea is even clearer!
 
-**Now, the question is:** can we implement original applications using this idea?  
-**Our answer is:** it depends.
-Depends on what?  
-On goals!
+**Now, the question is:** Can we implement original applications using this idea?  
+**Our answer:** It depends—on goals.
 
-## Client goals
+## Client Goals
 
-Let's try to spell out clients' goals:
-  1. Equivalent post migrated applications (modulo differences related to technology shift).
-  2. Easy support and development of migrated applications.
-  3. Good performance, preferrably better and more scalable than original applications.
+Let’s try to articulate clients’ goals:
+1. Applications that are equivalent after migration (except for differences related to the technology shift).
+2. Easy support and development of migrated applications.
+3. Good performance—preferably better and more scalable than the original applications.
 
-**So, if one has purely theoretical question:** "May original monolith applications be implemented as a set of microservices in the cloud?".  
-**Then the answer is:** yes.
+**So, if one asks the purely theoretical question:**  
+"Can original monolithic applications be implemented as a set of microservices in the cloud?"  
+**The answer is:** Yes.
 
-The problem with such implementation is that it will probably be not equivalent, difficult to maintain, and slow.
+The problem with such an implementation is that it will probably not be equivalent, may be difficult to maintain, and could be slow.
 
-1. When you split original application into microservices, you will need to keep in mind transaction boundaries.
-Transaction scope must be kept unless you prove or client confirm that it's not important.
+1. When you split the original application into microservices, you must consider transaction boundaries. Transaction scope needs to be preserved unless you can prove, or the client confirms, that it isn’t important.
 
-2. When you have deconstructed original application into microservices that probably sit in different source repositories, consider:
+2. When you have broken the original application into microservices - likely residing in different source repositories -consider:
    * What will you do with shared code?
-   * How are you going change it?
-   * After the change of shared code, are you going to re-test and re-deploy all dependant microservices?
-   * or are you going to copy it, and make it dedicated part of specific microservice?
-   * Are you going to retest all dependant microservices upon change of a specific service?
-   * How are you going to setup your debug environment?
+   * How will you change it?
+   * After changing shared code, will you re-test and re-deploy all dependent microservices?
+   * Or will you copy it, making it a dedicated part of a specific microservice?
+   * Will you re-test all dependent microservices when a specific service changes?
+   * How will you set up your debug environment?
+   * How do you plan CI/CD?
 
-3. Performance of communication of parts of application through microservices is levels of magnitudes lower than direct calls.
-   If you introduce a split in a wrong place, you will kill the performance.
+3. The performance of communication between parts of an application through microservices is orders of magnitude lower than direct calls. If you introduce a split in the wrong place, you will kill performance.
 
-If you think that the problem of refactoring application into microservices is specific to legacy applications, then we have to disagree with you.
-There are classes of applications that are monolith by nature, or can only be decoupled into coarse grained services.
+If you think that the problem of refactoring applications into microservices is specific to legacy applications, we have to disagree. There are classes of applications that are monolithic by nature, or can only be decoupled into coarse-grained services.
 
+## TODO: Not microservices but still scallable.
