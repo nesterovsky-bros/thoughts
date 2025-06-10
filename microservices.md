@@ -84,4 +84,4 @@ But we may use the same scaling technique on monolith application. All cloud pro
 
 There should be very strong reasons to make a decision to re-implement monolith complex application using microservices.
 
-Consider very hard all aspects. Don't do it just because it is a popular pattern today.
+Consider all aspects and don't do it just because it is a popular pattern today.
