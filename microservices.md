@@ -35,7 +35,7 @@ We asked Copilot to account for this, and it produced the following:
 Still an ugly picture, but the idea is even clearer!
 
 **Now, the question is:** Can we implement original applications using this idea?  
-**Our answer:** It depends—on goals.
+**Our answer:** It depends - on goals.
 
 ## Client Goals
 
