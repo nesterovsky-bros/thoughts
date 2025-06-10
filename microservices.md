@@ -9,7 +9,7 @@ to clients, to the management and more important to ourselves.
 We help with migration of big projects, usually from Mainframes, to today's technologies that often assume cloud,
 involve java or C# on backend, and, if relevant, angular or react on frontend.
 
-The projects we are dealing with are usually are essential to a client's business, so they cannot be decommissioned or easily rewritten. 
+The projects we are dealing with are usually essential to a client's business, so they cannot be decommissioned or easily rewritten. 
 That is where we come with automatic and verifiable approaches.
 
 Original projects usually follow "classic" - client, server and database scheme. They often have UI, services or batch operations. 
