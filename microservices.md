@@ -29,6 +29,6 @@ We asked Copilot to draw a diagram of cloud application implemented with microse
 
 ![image](https://github.com/user-attachments/assets/2af3c4ef-8408-4469-82c8-e14dd9e05076)
 
-I tend to say that Copilot is not great these days at drawing such diagrams, yet the idea is clear enough!
+Well, Copilot is not great these days at drawing such diagrams, yet the idea is clear enough!
 
 
