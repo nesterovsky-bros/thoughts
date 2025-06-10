@@ -52,7 +52,7 @@ The problem with such an implementation is that it will probably not be equivale
 
 1. When you split the original application into microservices, you must consider transaction boundaries. Transaction scope needs to be preserved unless you can prove, or the client confirms, that it isn’t important.
 
-2. When you have broken the original application into microservices - likely residing in different source repositories -consider:
+2. When you have broken the original application into microservices - likely residing in different source repositories - consider:
    * What will you do with shared code?
    * How will you change it?
    * After changing shared code, will you re-test and re-deploy all dependent microservices?
