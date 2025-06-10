@@ -12,7 +12,7 @@ cloud environments and involve Java or C# on the backend and, if relevant, Angul
 The projects we deal with are usually essential to a client's business, so they cannot be decommissioned or easily rewritten. 
 That is where we come in with automatic and verifiable approaches.
 
-Original projects usually follow the "classic" client-server-database scheme.. They often have UI, services or batch operations. 
+Original projects usually follow the "classic" client-server-database scheme. They often have UI, services or batch operations. 
 They have large codebases, with a complex graph of connections between programs.
 
 ## On client expectations
@@ -25,7 +25,7 @@ They know that cloud is almost equal to microservices.
 ## Microservices
 
 What are they?  
-I asked Copilot to draw a diagram of cloud application implemented with microservices. This is what it came with:
+We asked Copilot to draw a diagram of cloud application implemented with microservices. This is what it came with:
 
 ![image](https://github.com/user-attachments/assets/2af3c4ef-8408-4469-82c8-e14dd9e05076)
 
