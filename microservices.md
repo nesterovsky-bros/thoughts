@@ -42,7 +42,7 @@ Still an ugly picture, but the idea is even clearer!
 Let’s try to articulate clients’ goals:
 1. Applications that are equivalent after migration (except for differences related to the technology shift).
 2. Easy support and development of migrated applications.
-3. Good performance—preferably better and more scalable than the original applications.
+3. Good performance - preferably better and more scalable than the original applications.
 
 **So, if one asks the purely theoretical question:**  
 "Can original monolithic applications be implemented as a set of microservices in the cloud?"  
