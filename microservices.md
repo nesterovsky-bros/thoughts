@@ -21,3 +21,14 @@ Clients need continuity of their projects' life and experience. They want to mig
 They want performance improvements. Ease of development and support is a paramount for them. 
 They often talk about migration to a cloud. 
 They know that cloud is almost equal to microservices.
+
+## Microservices
+
+What are them?  
+I asked Copilot to draw a diagram of cloud application implemented with microservices. This is what it came with:
+
+![image](https://github.com/user-attachments/assets/2af3c4ef-8408-4469-82c8-e14dd9e05076)
+
+I tend to say that Copilot is bad now days at drawing such diagram, yet idea is clear enough!
+
+
