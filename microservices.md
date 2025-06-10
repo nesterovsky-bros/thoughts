@@ -31,4 +31,12 @@ We asked Copilot to draw a diagram of cloud application implemented with microse
 
 Well, Copilot is not great these days at drawing such diagrams, yet the idea is clear enough!
 
+Can our projects be represented like this?
+Almost, but with a couple of additions:
+* there are from hundreds to thousands of services;
+* there are shared code used by services.
 
+We asked Copilot to account this, and it produced the following:
+![image](https://github.com/user-attachments/assets/5e782040-7161-454f-a08f-abac7f7de1d1)
+
+Still ugly picture, but idea is even more clear!
