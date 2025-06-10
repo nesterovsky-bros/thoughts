@@ -65,4 +65,23 @@ The problem with such an implementation is that it will probably not be equivale
 
 If you think that the problem of refactoring applications into microservices is specific to legacy applications, we have to disagree. There are classes of applications that are monolithic by nature, or can only be decoupled into coarse-grained services.
 
-## TODO: Not microservices but still scallable.
+## Not microservices but still scallable
+
+So, what is the point of microservices. Let's quote [Wikipedia](https://en.m.wikipedia.org/wiki/Microservices):
+
+> In software engineering, a microservice architecture is an architectural pattern that organizes an application into a collection of loosely coupled, fine-grained services that communicate through lightweight protocols. This pattern is characterized by the ability to develop and deploy services independently, improving modularity, scalability, and adaptability. However, it introduces additional complexity, particularly in managing distributed systems and inter-service communication, making the initial implementation more challenging compared to a monolithic architecture.
+
+The very first paragraph pinpoints both strengths and weaknesses.  
+
+In our case microservices make the solutions virtually unmanageable.
+
+**You may ask:** But what about scalability?  
+Indeed, microservises, are said, to start fast and may scale in and out on demand.  
+
+But we may use the same scaling technique on monolith application. All cloud providers and Kebernetes support it, so no scalability is lost! That's true that monolithic application may start slower but this can be amortized with scaling parameters, like delay to scale down.
+
+## Conclusion
+
+There should be very strong reasons to make a decision to re-implement monolith complex application using microservices.
+
+Consider very hard all aspects. Don't do it just because it is a popular pattern today.
