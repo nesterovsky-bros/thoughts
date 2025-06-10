@@ -65,7 +65,7 @@ The problem with such an implementation is that it will probably not be equivale
 
 If you think that the problem of refactoring applications into microservices is specific to legacy applications, we have to disagree. There are classes of applications that are monolithic by nature, or can only be decoupled into coarse-grained services.
 
-## Not microservices but still scallable
+## Not microservices but still scalable 
 
 So, what is the point of microservices. Let's quote [Wikipedia](https://en.m.wikipedia.org/wiki/Microservices):
 
