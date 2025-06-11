@@ -19,7 +19,7 @@ Clients need continuity for their projects’ lifecycles and user experience. Th
 What are they?  
 We asked Copilot to draw a diagram of a cloud application implemented with microservices. This is what it produced:
 
-![image](https://github.com/user-attachments/assets/2af3c4ef-8408-4469-82c8-e14dd9e05076)
+![image](assets/microservices1.png)
 
 Well, Copilot isn’t great at drawing such diagrams these days, but the idea is clear enough!
 
@@ -30,7 +30,7 @@ Almost, but with a couple of additions:
 
 We asked Copilot to account for this, and it produced the following:
 
-![image](https://github.com/user-attachments/assets/5e782040-7161-454f-a08f-abac7f7de1d1)
+![image](assets/microservices2.png)
 
 Still an ugly picture, but the idea is even clearer!
 
