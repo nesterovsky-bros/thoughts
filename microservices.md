@@ -86,4 +86,4 @@ There should be very strong reasons to make a decision to re-implement monolith 
 
 Consider all aspects and don't do it just because it is a popular pattern today.
 
-To make it more explicit - our initial answer is NO, as it violates migration goals. If client want they may exercise in this task post migration.
+To make it more explicit - our initial answer is NO, as it violates migration goals. If clients want they may exercise in this task post migration.
