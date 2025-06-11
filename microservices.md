@@ -78,7 +78,7 @@ In our case microservices make the solutions virtually unmanageable.
 **You may ask:** But what about scalability?  
 Indeed, microservises, are said, to start fast and may scale in and out on demand.  
 
-But we may use the same scaling technique on monolith application. All cloud providers and Kebernetes support it, so no scalability is lost! That's true that monolithic application may start slower but this can be amortized with scaling parameters, like delay to scale down.
+But we may use the same scaling technique on monolith application. All cloud providers and Kubernetes support it, so no scalability is lost! That's true that monolithic application may start slower but this can be amortized with scaling parameters, like delay to scale down.
 
 ## Conclusion
 
